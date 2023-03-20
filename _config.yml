@@ -1,0 +1,13 @@
+# Site settings
+title: Сергей Красноперов - Backend developer and DevOps
+tag_text: Сергей Красноперов
+description: Я бекенд разработчик из Калининграде, Россия
+
+url: https://sergeykrasn.me
+enforce_ssl: sergeykrasn.me
+
+# Build settings
+markdown: kramdown
+exclude: ["README.md"]
+sass:
+  style: compressed

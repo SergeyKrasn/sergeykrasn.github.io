@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="LkwC7AcnVJxKcqEHwxR6pU-IbKlYcR-yVM3i1_ez3Yc" />
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="/css/main.css?{{site.time | date: '%s%N'}}">
+{% include head.html %}
+</head>
+<body>
+  <div class="container">
+    <div class="row justify">
+      <div class="w-70">
+        <h1 class="name"><a href="./">{{ site.tag_text }}</a></h1>
+        <ul class="links">
+            <li><a href="mailto:sergeykrasn@gmail.com">📧 sergeykrasn@gmail.com</a></li>
+            <li><a href="https://t.me/sergeyKrasn">💬 t.me/sergeyKrasn</a></li>
+        </ul>
+      </div>
+      <img class="avatar" src="/avatar.jpg" />
+    </div>
+
+    {{ content }}
+  </div>
+{% include scripts.html %}
+</body>
+</html>
